@@ -6,7 +6,7 @@ const { MongoClient } = require('mongodb');
 
 adminRouter.route('/').get((req, res)=>{
     debug('up here');
-    const url = 'mongodb+srv://dbUser:h8RKKkZRnkorvPNB@globomanticstest.22e3mul.mongodb.net?retryWrites=true&w=majority';
+    const url = 'mongodb+srv://dbUser:PASSWORD@globomanticstest.22e3mul.mongodb.net?retryWrites=true&w=majority';
     const client = new MongoClient(url);
     const dbName = 'Globomantics';
 
